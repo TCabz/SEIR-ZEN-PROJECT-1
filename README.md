@@ -27,29 +27,10 @@ All previous lessons are on the class readme
   1. Implement responsive design (i.e. it should be fully functional on desktop, tablet, mobile, etc)
   1. Have one or more complex user interface modules such as a carousel, drag and drop, a sticky nav, tooltips, animations, etc
 
-### 📋 List of API's
+### API's
 
-Below is a non-exhaustive list of some free APIs you can use. There are _many_ APIs out there, however, so if you find one not on this list that you'd like to use, feel free! Please note that some may require signing up for an API key (e.g. the Marvel API).
-
-  1. Marvel: https://developer.marvel.com/
-  1. Star Wars: https://swapi.co/
-  1. Weather: https://openweathermap.org/api
-  1. News: https://newsapi.org/
-  1. Giphy: https://developers.giphy.com/
   1. Pokemon: http://pokeapi.co/
-  1. Card Deck: https://deckofcardsapi.com/
-  1. Google Books: https://developers.google.com/books/
-  1. City of Chicago: https://data.cityofchicago.org/
-  1. Beer: https://www.brewerydb.com/developers
-  1. Chuck Norris: http://www.icndb.com/
-  1. Rick and Morty: https://rickandmortyapi.com/documentation/#rest
 
-Lastly, the following sites congregate a bunch of APIs together, so you can take a look through their libraries and try to find an API that interests you! Note, however, that not all APIs are free and many listed may require payment. We **highly suggest** to use a free API for your first project dealing with one.  We **also suggest** doing a "hello world" with your API as soon as possible to make sure it does what you want it to do.  **Not all APIs are created equal.**
-
-#### More API's:
-
-  1. https://github.com/toddmotto/public-apis
-  1. https://rapidapi.com/
 
 ### &#x1F535; Stretch Goals (Not Mandatory):
 #### Recommended Features
@@ -59,13 +40,13 @@ Lastly, the following sites congregate a bunch of APIs together, so you can take
 
 ## Make A New Repo
 
-:heavy_exclamation_mark: You will be using GitHub, **not** GitHub Enterprise!
+You will be using GitHub, **not** GitHub Enterprise!
 
-:heavy_exclamation_mark: **Do not** begin your project within the class repo.
+**Do not** begin your project within the class repo.
 
-:heavy_exclamation_mark: **Do not** clone your project into the class repo.
+**Do not** clone your project into the class repo.
 
-1. After your project has been approved, [make a new github repo for your project](https://help.github.com/articles/create-a-repo/). You will be deploying this project onto github pages.
+[make a new github repo for your project](https://help.github.com/articles/create-a-repo/). You will be deploying this project onto github pages.
 
 Follow the instructions outlined by github themselves on [github.io](https://pages.github.com/).  You need to select `Project site` and `Start from scratch`.  If you need help, ask during office hours or class on right away.
 
