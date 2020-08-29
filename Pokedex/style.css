@@ -1,21 +1,98 @@
-@import url(`https://fonts.googleapis.com/css?family=Lato:300,400&display=swap`);
-
-* {
-  box-sizing: border-box;
+/* Downloaded Pokemon Fonts */
+@font-face {
+  font-family: PokemonHollowNormal;
+  src: url(pokemon-downloaded-fonts/PokemonHollowNormal-pyPZ.ttf);
 }
 
+@font-face {
+  font-family: PokemonSolidNormal;
+  src: url(pokemon-downloaded-fonts/PokemonSolidNormal-xyWR.ttf);
+}
 body {
-  background: coral;
-  background: -webkit-linear-gradient(to right, #d4d3dd, #efefbb);
-  background: -linear-gradient(to right, #d4d3dd, #efefbb);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Lato";
+  background-color: coral;
+  color: white;
   margin: 0;
+  font-family: rubik;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
 }
 
 h1 {
-  letter-spacing: 3px;
+  font-family: PokemonHollowNormal;
+  letter-spacing: 20px;
+  color: yellow;
+  text-align: center;
+  font-size: 40px;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 35px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 15px;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+  background-color: pink;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.card-title {
+  font-family: PokemonSolidNormal;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-family: ;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+}
+.card-subtitle {
+  margin-top: 10px;
+  color: royalblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.card-image {
+  height: 200px;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+footer {
+  background: royalblue;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  height: 1.1em;
+  text-align: center;
+  width: auto;
+  padding: 1em;
 }
