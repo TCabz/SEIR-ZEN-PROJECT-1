@@ -1,4 +1,6 @@
-console.log("Compassion = Happiness");
+// console.log("Compassion = Happiness");
+
+// get data from api
 const pokedex = document.getElementById("pokedex");
 
 const fetchPokemon = () => {
@@ -7,10 +9,11 @@ const fetchPokemon = () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     promises.push(fetch(url).then((res) => res.json()));
   }
+
   Promise.all(promises).then((results) => {
     const pokemon = results.map((result) => ({
       name: result.name,
-      image: result.sprites["front_default"],
+      image: result.sprites["front_shiny"],
       type: result.types.map((type) => type.type.name).join(", "),
       id: result.id,
     }));
@@ -22,14 +25,15 @@ const displayPokemon = (pokemon) => {
   console.log(pokemon);
   const pokemonHTMLString = pokemon
     .map(
-      (pokeman) => `
+      (poke) => `
         <li class="card">
-            <img class="card-image" src="${pokeman.image}"/>
-            <h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2>
-            <p class="card-subtitle">Type: ${pokeman.type}</p>
+            <img class="card-image" src="${poke.image}"/>
+            <h2 class="card-pokemon-name">${poke.id}. ${poke.name}</h2>
+            <p class="card-pokemon-type">Type: ${poke.type}</p>
         </li>
     `
     )
+
     .join("");
   pokedex.innerHTML = pokemonHTMLString;
 };
